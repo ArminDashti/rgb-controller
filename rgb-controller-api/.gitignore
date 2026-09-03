@@ -1,0 +1,23 @@
+*.exe
+*.EXE
+bin/
+.env
+.armin/
+.cursor/
+*.log
+node_modules/
+__pycache__/
+.venv/
+venv/
+*.db
+*.db-wal
+*.db-shm
+.pytest_cache/
+
+# BEGIN AUTO-MANAGED LARGE FILES (>5MB)
+# END AUTO-MANAGED LARGE FILES
+
+# AUTO-IGNORE-LARGE-FILES (>5MB) â€” managed by github-commit-push-all
+# github-commit-push-all: large files (>5MB) — auto-managed
+
+# auto-managed: files > 5MB

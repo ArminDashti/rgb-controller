@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="/pwa-192.png" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0284c7" />
+    <meta name="description" content="RGB Controller WebUI" />
+    <title>RGB Controller</title>
+    <script>
+      try {
+        if (localStorage.getItem('rgb-controller-theme') !== 'light') {
+          document.documentElement.classList.add('dark')
+        }
+      } catch (e) {
+        document.documentElement.classList.add('dark')
+      }
+    </script>
+  </head>
+  <body>
+    <div id="app"></div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
